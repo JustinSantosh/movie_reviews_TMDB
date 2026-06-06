@@ -1,6 +1,4 @@
-import React from 'react'
-
-const Search = ({ searchTerm, setSearchTerm }) => {
+const Search = ({ searchTerm, setSearchTerm, placeholder }) => {
   return (
     <div className="search">
       <div>
@@ -8,7 +6,7 @@ const Search = ({ searchTerm, setSearchTerm }) => {
 
         <input
           type="text"
-          placeholder="Search through thousands of movies"
+          placeholder={placeholder}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
